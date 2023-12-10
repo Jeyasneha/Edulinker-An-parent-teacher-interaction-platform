@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>View-Attendence</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'homestyle.css' %}">
+    <script src="https://kit.fontawesome.com/02dddd40d0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+        <div class="logo">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <h1>Edulinker</h1>
+       </div>
+        <div class="navlinks">
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>View Attendance </li>
+                <li>View Result </li>
+                <li>Query </li>
+
+            </ul>
+        </div>
+        
+    </nav>
+    <div class="student-testdetails">
+           <h4><i>Name: {{ sname }} <br> Roll Number: {{ sroll }}</i></h4>
+    </div>
+        
+    <div class="table">
+  <div class="row">
+    <div class="cell">Number of days absent</div>
+    <div class="cell">Number of days present</div>
+    <div class="cell">Attendance Percentage</div>
+    <div class="cell">Total Working Days</div>
+    
+    
+    
+
+  </div>
+  <div class="row">
+    <div class="cell">{{ count }}</div>
+    <div class="cell">{{ presentday }}</div>
+    <div class="cell">{{percentage}}</div>
+    <div class="cell">120</div>
+
+  </div>
+</div>
+
+        
+        
+        
+        
+        
+    </body>
+</html>
